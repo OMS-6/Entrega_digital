@@ -10,7 +10,7 @@ con ajustes de "contrast ratio" https://webaim.org/resources/contrastchecker/
 
 /* cambien aquí sus tipografías, necesitan definir un par */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
 
 /* cambien aquí sus colores, necesitan definir tres */
 
@@ -24,7 +24,7 @@ con ajustes de "contrast ratio" https://webaim.org/resources/contrastchecker/
 
 body {
     /* asignen aquí las tipografías y colores para todo texto */
-    font-family: azo-sans-web, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     background: var(--segundocolor);
     color: var(--colorclaro);
