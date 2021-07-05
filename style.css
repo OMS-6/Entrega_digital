@@ -10,12 +10,12 @@ con ajustes de "contrast ratio" https://webaim.org/resources/contrastchecker/
 
 /* cambien aquí sus tipografías, necesitan definir un par */
 
-@import url("https://use.typekit.net/ggu4agk.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* cambien aquí sus colores, necesitan definir tres */
 
 :root {
-    --primercolor: #212;
+    --primercolor: #222;
     --segundocolor: #666; /* menos luminoso y más saturado que el primero */
     --tercercolor: #aaa; /* más luminoso y menos saturado que el primero */
     --colorclaro: rgba(255, 255, 255, 0.9);
