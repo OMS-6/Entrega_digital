@@ -87,8 +87,7 @@
                     <div class="row py-5 align-items-center">
                         <div class="col-md-6 col-lg-7 order-md-last">
                             <svg enable-background="new 0 0 665 375" version="1.1" viewBox="0 0 665 375" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <image transform="matrix(.5 0 0 .5 0 0)" width="1330" height="750" overflow="visible" xlink:href="img/relacion-16x9.png"></image>
-                                <circle class="st0" cx="332.5" cy="187.5" r="125" />
+                                <image transform="matrix(.5 0 0 .5 0 0)" width="1330" height="750" overflow="visible" xlink:href="img/imagen-mixta.svg"></image>
                             </svg>
                         </div>
                         <div class="col-md-6 col-lg-5 p-4 order-md-first">
@@ -215,22 +214,45 @@
         <script>
             var ctx = document.getElementById("nuestroGrafico");
             var nuestroGrafico = new Chart(ctx, {
-                type: "line",
+                type: "bar",
                 data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Cyan", "Magenta"],
+                    labels: ["Oriente Europa", "Africa", "Asia", "Sudamérica", "Mundo", "URSS", "Norteamérica"],
                     datasets: [
                         {
-                            label: "# of Votes",
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: ["#FF0000", "#0000FF", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
+                            label: "Agricultura",
+                            data: [90, 85, 82, 69, 60, 40, 35],
+                            backgroundColor: ["#FF0000"],
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Doméstico",
+                            data: [5, 9, 8, 9, 10, 11, 12],
+                            backgroundColor: ["#0000FF"],
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Industria",
+                            data: [4, 8, 10, 22, 29, 45, 51],
+                            backgroundColor: ["#FFFF00"],
                             borderWidth: 1,
                         },
                     ],
                 },
                 options: {
+                    plugins: {
+                        title: { text: "Consumo de agua por continentes y sectores", display: true },
+                        subtitle: {
+                            text: "Fuente: FAO, Datos referidos a 1998. Departamento de Urbanismo y Ordenación del Territorio. Rafael Córdoba Hernández", 
+                            display: true, 
+                            position: "bottom", 
+                            align: "start" 
+                        }, 
+                    },
                     scales: {
                         y: {
-                            beginAtZero: true,
+                            beginAtZero: true, 
+                            max: 100,
+                            title: { text: "%", display: true },
                         },
                     },
                 },
